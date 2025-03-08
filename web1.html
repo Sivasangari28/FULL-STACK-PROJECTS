@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics Website</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="lightbox.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-right">
+                <a href="#shop">Shop</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="Search">
+            <button>Search🔍</button>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-slider">
+            <div class="slide">
+                <img src="lor.jpg" alt="Slider 1">
+                <div class="content">
+                    
+                    <h4 style="color: black;"> Discover the best cosmetics products for your skin.</h4>
+                </div>
+            </div>
+            
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a leading cosmetics company dedicated to providing high-quality products for your skin.</p>
+        <p>Our mission is to help you achieve healthy, glowing skin.“Because you are worth it.” With this world-recognized slogan, and from the beginning, L’Oréal Paris has encouraged women to live their best lives according to their own rules and desires.Committed to quality, to scientific excellence and to permanent innovation, we are proud to be the world’s leading cosmetics brand that makes the best of beauty available to all. With L’Oréal Paris, beauty is synonymous with luxury and accessibility, for fans everywhere to make their own.
+            </p>
+            <p>Beyond cosmetics, L’Oréal Paris creates a world of Parisian beauty to inspire every woman everywhere. In dialogue from the streets to its runways, myriad interpretations of Parisian beauty and femininity are reinvented every day.
+
+                Leading the way in inclusivity, we makes product for people of all origins. From the creative minds and skilled hands of global makeup director Val Garland and hair director Stéphane Lancien, L’Oréal Paris brings the future of beauty into women’s daily lives.
+                
+                Beauty excellence
+                With more than 40 years of pioneering scientiﬁc research heritage, L’Oréal Paris is proud to offer a stringent selection of the most advanced beauty care with proven efﬁcacy and safety to its consumers.
+                
+                We have not tested any of our products or ingredients on animals since 1989, 14 years before required by regulations. This commitment to developing alternative safety tests has become an integral part of the scientiﬁc expertise of the L’Oréal Paris Laboratories ever since.
+                
+                Beauty to empower
+                Five words: “Because I’m worth it,” and L’Oréal Paris helped to change the worldview of beauty for good. When actress Joanne Dusseau first uttered the now-iconic phrase in the early 70s, it was the first time an advertisement campaign claimed beauty for oneself, not for men.
+                
+                The tagline became a rallying call that voiced the shifting place of women in society.
+                
+                Today the brand continues supporting women on the journey to self-worth.  To be a L’Oréal Paris spokesperson is to stand for the power of taking ownership of your identity. Each ambassador is a role models for the strength of women, and an inspiration to fulfil our talents every day.</p>
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Shop Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="c1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$20.00</p>
+            </div>
+            <div class="product">
+                <img src="c2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$30.00</p>
+            </div>
+            <div class="product">
+                <img src="c3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$40.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Our Blog</h2>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="c4.jpg" alt="Post 1">
+                <h3>Post 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post">
+                <img src="c5.jpg" alt="Post 2">
+                <h3>Post 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post">
+                <img src="c6.jpg" alt="Post 3">
+                <h3>Post 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="color: black;">Contact Us</h2>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+         <center>   <p>&copy; 2024 Cosmetics Website</p></center>
+           
+        </div>
+    </footer>
+
+    <script src="swiper.min.js"></script>
+    <script src="lightbox.min.js"></script>
+    <script>
+        // Initialize Swiper for the home slider
+        var swiper = new Swiper('.home-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Initialize Lightbox for the blog posts
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+        });
+    </script>
+</body>
+<style>
+    /* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .nav-left,
+nav .nav-right {
+    display: flex;
+}
+
+nav .nav-left a,
+nav .nav-right a {
+    margin-right: 20px;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.search-bar {
+    position: relative;
+    margin-left: auto;
+}
+
+.search-bar input[type="search"] {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.search-bar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 2.5rem;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #23527c;
+}
+
+/* Home Slider Styles */
+.home-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-slider .slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+.home-slider .slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: 20rem;
+}
+
+.home-slider .slide .content {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Shop Section Styles */
+.shop {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.shop h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.shop .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shop .product {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.shop .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.shop .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.shop .product p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Blog Section Styles */
+.blog {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog .post {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.blog .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.blog .post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog .post p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    text-align: left;
+    padding: 5px;
+}
+
+.contact input[type="text"], 
+.contact input[type="email"], 
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.contact input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+</style>
+</html>

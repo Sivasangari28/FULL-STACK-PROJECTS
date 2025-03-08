@@ -1,0 +1,286 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.search-bar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 2.5rem;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #23527c;
+}
+
+/* Home Slider Styles */
+.home-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-slider .slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+.home-slider .slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: 20rem;
+}
+
+.home-slider .slide .content {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Shop Section Styles */
+.shop {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.shop h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.shop .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.shop .product {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.shop .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.shop .product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.shop .product p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Blog Section Styles */
+.blog {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog .post {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.blog .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.blog .post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog .post p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.contact input[type="submit"] {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ccc;
+}
